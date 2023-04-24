@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(228deg, rgb(236, 222, 222), rgb(177, 165, 212));
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgb(240, 74, 74);
+    height: 120px;
+
+}
+.title {   
+    margin-left: 40px; 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    user-select: none;
+}
+i {
+    font-size: 2em;
+    padding: 0 15px 0 0;
+    cursor: pointer;
+}
+
+nav ul {
+    margin-right: 40px; 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+
+}
+nav ul li {
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+i:hover,
+nav ul li:hover {
+    color: rgb(240, 239, 239)
+}
+.current:after {
+    content: "";
+    border-bottom: 5px solid rgb(235, 234, 175);
+    padding: 4px;
+    display: block;
+}
+
+/* wrapper */
+
+.wrapper {
+    font-family: 'Kalam', cursive;
+    display: grid;
+    grid-template-columns: 80% 20%;    font-size: 155px;
+    user-select: none;
+}
+.equation {
+    background-color: rgb(252, 250, 250);
+    margin: 10px 5px 10px 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+
+}
+.num1{color: rgb(231, 215, 64);}
+.sign{color: rgb(228, 66, 60);}
+.num2{color: green;}
+.equal{color: rgb(38, 95, 202);}
+.result{color: rgb(224, 65, 245);}
+
+.answer-options div {
+    border-radius: 4px;
+    margin: 10px 10px 10px 5px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    cursor: pointer;
+}
+.option1{
+    background-color: green;
+}
+.option2{
+    background-color: rgb(223, 220, 41);
+}
+.option3{
+    background-color: rgb(57, 107, 243);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 830px) {
+    h1 {
+        display: none;
+    }
+}
