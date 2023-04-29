@@ -40,6 +40,11 @@ i {
     padding: 0 15px 0 0;
     cursor: pointer;
 }
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
 
 nav ul {
     margin-right: 40px; 
@@ -71,7 +76,8 @@ nav ul li:hover {
 .wrapper {
     font-family: 'Kalam', cursive;
     display: grid;
-    grid-template-columns: 80% 20%;    font-size: 155px;
+    grid-template-columns: 70% 30%;    
+    font-size: 11em;
     user-select: none;
 }
 .equation {
@@ -113,20 +119,30 @@ nav ul li:hover {
 }
 
 
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        font-size: 11em;
+    }
+}
 
+@media screen and (max-width: 900px) {
 
-
-
-
-
-
-
-
-
-
+    .wrapper {
+        font-size: 10em;
+    }
+}
 
 @media screen and (max-width: 830px) {
     h1 {
         display: none;
+    }
+    .wrapper {
+        font-size: 9em;
+    }
+}
+@media screen and (max-width: 740px) {
+
+    .wrapper {
+        font-size: 8em;
     }
 }
